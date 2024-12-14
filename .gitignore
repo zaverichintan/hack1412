@@ -1,0 +1,6 @@
+venv
+__pycache__/
+old
+frontend/node_modules/
+node_modules
+.next

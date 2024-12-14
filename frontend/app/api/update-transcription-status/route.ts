@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const db = await dbPromise;
-    await db.run('UPDATE transcriptions SET status = ? WHERE id = ?', status, id);
+    await db.run('UPDATE transcriptions_cont SET status = ? WHERE id = ?', status, id);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error updating transcription status:', error);
